@@ -38,10 +38,10 @@ and it will work just as normal groundplane detection does.
 ### Android
 Vuforia SDK currently only supports Android versions 8.0 +.
 AR Core support is also required to be able top perform ground plane detection.
-**Download Demo APK**
+#### **Download Demo APK**
 armeabi-v7a architecture should work on most android devices as per the previously stated requirements.
 [Download Android APK](https://drive.google.com/file/d/1XIBA4brDT4Zi_ax6k7GUzoiZn0gz9n5a/view?usp=sharing)
-**Download Demo APK**
+#### **Download Demo APK**
 arm64-v8a	 architecture download.
 [Download Android APK](https://drive.google.com/file/d/1_jiLIUCZvgXrhG09dGvqBi1nMmEcWHcn/view?usp=sharing)
 ### IOS
