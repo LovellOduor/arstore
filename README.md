@@ -1,4 +1,4 @@
-# ✨ AR STORE DEMO PROJECT✨
+# 🚀 ✨ AR STORE DEMO PROJECT ✨ 🚀
 
 This project illustrates the use of Augmented Reality in an e-commerce style application.  
 The app consists of three screens:
@@ -18,5 +18,11 @@ A screen to display the details when a product is selected.
 ### 3. AR View Screen 
 A screen to display the Augmented model of the product.
 <p align="center">
-  <img src="/gitfiles/arviewscreen.png" alt="creen to display the Augmented model of the product."/>
+  <img src="/gitfiles/arviewscreen.png" alt="Screen to display the Augmented model of the product."/>
+</p>
+
+## HOW IT WORKS ⚙️ DEMO 🚀
+
+<p align="center">
+  <img src="/gitfiles/arstore.gif" alt="AR store gif"/>
 </p>
