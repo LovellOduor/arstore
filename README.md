@@ -70,19 +70,19 @@ https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/
 ## APPLICATION ARCHITECTURE PATTERN
 The app utilizes the **Model View Controller (MVC)** design pattern.
 ### 1.Views
-The View is comprised of the User Interface, and UI components.__
+The View is comprised of the User Interface, and UI components.\
 In Unity the 3 screens displayed Products, Product Details and AR View represent the View layer of our design.
 ### 2. Model 
-The model layer is responsible for business logic and data classes.__
-In our application we have the following classes forming our model.__
-1.) [DataSource.cs](/Assets/scripts/DataSource.cs) - This class contains the business logic for fetching all the data about products such as images, name, id__
+The model layer is responsible for business logic and data classes.\
+In our application we have the following classes forming our model.\
+1.) [DataSource.cs](/Assets/scripts/DataSource.cs) - This class contains the business logic for fetching all the data about products such as images, name, id\
 2.) [Product.cs](/Assets/scripts/Product.cs) - This class makes up the structure of a Product. It contains all the data
 about a particular product such as modelFile, name, imageUrl.
 ### 3. Controller
-The controller layer enables the View layer to Comunicate with the Model layer.__
-The flowing classes make this possible:__
-1.) [Products.cs](/Assets/scripts/Products.cs) - This controller displays product data on the products page and also listens to events comping from the products page.__
-2.) [ProductDetails.cs](/Assets/scripts/ProductDetails.cs) - This class controlls the data displayed on the product details page.__
+The controller layer enables the View layer to Comunicate with the Model layer.\
+The flowing classes make this possible:\
+1.) [Products.cs](/Assets/scripts/Products.cs) - This controller displays product data on the products page and also listens to events comping from the products page.\
+2.) [ProductDetails.cs](/Assets/scripts/ProductDetails.cs) - This class controlls the data displayed on the product details page.\
 3.) [ModelLoader.cs](/Assets/scripts/ModelLoader.cs) - This class loads the 3D model for AR display on launch of the
 ARView page.
 
