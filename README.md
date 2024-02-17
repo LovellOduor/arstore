@@ -23,6 +23,4 @@ A screen to display the Augmented model of the product.
 
 ## HOW IT WORKS ⚙️ DEMO 🚀
 
-<p align="center">
-  <img src="/gitfiles/arstore.gif" alt="AR store gif"/>
-</p>
+![AR store gif](/gitfiles/arstore.gif)
