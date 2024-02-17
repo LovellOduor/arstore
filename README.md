@@ -58,7 +58,9 @@ You need to install the Vuforia SDK Unity package. The download link and instruc
 are here -> [Click here to download Vuforia SDK Unity package] (https://developer.vuforia.com/library/getting-started/getting-started-vuforia-engine-unity#adding-vuforia%C2%A0engine-to-a-unity-project)
 #### 2. gltFast package
 The gltFast package is required in order to load .gltf 3D models from the internet.
+Select version 6.2 from the dropwdown on the top left.
 [Click here for gltFast installation instructions](https://developer.vuforia.com/library/getting-started/getting-started-vuforia-engine-unity#adding-vuforia%C2%A0engine-to-a-unity-project)
+##### Note if gltFast installation keeps failing try running Unity as Administrator 
 
 ## SYSTEM ARCHITECTURE 
 
