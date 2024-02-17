@@ -30,6 +30,8 @@ A screen to display the Augmented model of the product.
 
 ## TESTING 
 The project requires Vuforia SDK as a dependancy to perform Ground Plane detetion.
+I developed and tested it on Unity version 2022.3.19f1.
+
 ### Unity Editor
 On the editor ground plane detection does not work, so Vuforia provides a document with a ground plane marker as a substitute.
 Simply printout the groundplane marker or open the pdf on your phone and align it towards the Unity editor camera
@@ -48,7 +50,15 @@ arm64-v8a	 architecture download.
 Minimum version supported is IOS 15+
 
 ## INSTALLATION
+Ensure you have Unity Installed.
+Download or clone the repo onto your machine, then install the following dependancies for the project to run.
 ### Dependancies
+#### 1. Vuforia SDK
+You need to install the Vuforia SDK Unity package. The download link and instructions 
+are here -> [Click here to download Vuforia SDK Unity package] (https://developer.vuforia.com/library/getting-started/getting-started-vuforia-engine-unity#adding-vuforia%C2%A0engine-to-a-unity-project)
+#### 2. gltFast package
+The gltFast package is required in order to load .gltf 3D models from the internet.
+[Click here for gltFast installation instructions](https://developer.vuforia.com/library/getting-started/getting-started-vuforia-engine-unity#adding-vuforia%C2%A0engine-to-a-unity-project)
 
 ## SYSTEM ARCHITECTURE 
 
