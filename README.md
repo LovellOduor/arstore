@@ -62,5 +62,30 @@ Select version 6.2 from the dropwdown on the top left.
 [Click here for gltFast installation instructions](https://developer.vuforia.com/library/getting-started/getting-started-vuforia-engine-unity#adding-vuforia%C2%A0engine-to-a-unity-project)
 ##### Note if gltFast installation keeps failing try running Unity as Administrator 
 
-## SYSTEM ARCHITECTURE 
+## 3D Model Sources
+I sourced the 3D models from Khronos group repo, no need to re-download them they are fetched automatically
+during runtime. 
+https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/
 
+## APPLICATION ARCHITECTURE PATTERN
+The app utilizes the **Model View Controller (MVC)** design pattern.
+### 1.Views
+The View is comprised of the User Interface, and UI components.--
+In Unity the 3 screens displayed Products, Product Details and AR View represent the View layer of our design.
+### 2. Model 
+The model layer is responsible for business logic and data classes.--
+In our application we have the following classes forming our model.--
+1.) [DataSource.cs](/Assets/scripts/DataSource.cs) - This class contains the business logic for fetching all the data about products such as images, name, id--
+2.) [Product.cs](/Assets/scripts/Product.cs) - This class makes up the structure of a Product. It contains all the data
+about a particular product such as modelFile, name, imageUrl.
+### 3. Controller
+The controller layer enables the View layer to Comunicate with the Model layer.--
+The flowing classes make this possible:--
+1.) [Products.cs](/Assets/scripts/Products.cs) - This controller displays product data on the products page and also listens to events comping from the products page.--
+2.) [ProductDetails.cs](/Assets/scripts/ProductDetails.cs) - This class controlls the data displayed on the product details page.--
+3.) [ModelLoader.cs](/Assets/scripts/ModelLoader.cs) - This class loads the 3D model for AR display on launch of the
+ARView page.
+
+###**Singleton Pattern**
+The [DataStore.cs](/Assets/scripts/DataStore.cs) - This class is instanciated onl once throughout the lifetime of the
+applicaton and is accessible to all screens. It contains data about the currenty selected product by the user, and also the list of all products loaded to save on operation costs, of making multiple repeated requests to fetch data.
