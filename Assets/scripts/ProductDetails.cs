@@ -28,6 +28,14 @@ public class ProductDetails : MonoBehaviour
      Texture2D img = Resources.Load<Texture2D>(product.getImage());
      productImage.GetComponent<RawImage>().texture = img;
 
+        backNavigationButton.GetComponent<Button>().onClick.AddListener(delegate () {
+            SceneManager.LoadScene("Products");
+        });
+
+        ARViewButton.GetComponent<Button>().onClick.AddListener(delegate () {
+            SceneManager.LoadScene("ARView");
+        });
+
     }
 
 

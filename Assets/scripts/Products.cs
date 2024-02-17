@@ -12,12 +12,11 @@ public class Products : MonoBehaviour
     private void displayProducts()
     {
 
-        DataSource dataSource = new DataSource();
 
 
         GameObject productCardTemplate = this.transform.GetChild(0).gameObject;
 
-        foreach (Product product in dataSource.products)
+        foreach (Product product in DataStore.Instance.products)
         {
 
             // Get the product image from the resources folder, though this can be easily replaced

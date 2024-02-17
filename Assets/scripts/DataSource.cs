@@ -7,27 +7,6 @@ public class DataSource
 
 {
 
-    public List<Product> products = new List<Product>();
-
-    /* This constructor converts data from the data source to Product data which utilizes the product class
-       and stores all the products in the products list.*/
-
-    public DataSource()
-    {
-       Dictionary<string,object>[] productsData = this.getProducts();
-        for (int i =0; i < productsData.Length;i++)
-        {
-            Dictionary<string, object> product = productsData[i];
-            products.Add(new Product(
-                id:product["id"] as string,
-                name:product["name"] as string, 
-                price:float.Parse((string)product["price"]) ,
-                description:product["description"] as string, 
-                image:product["image"] as string, 
-                modelFile:product["modelFile"] as string));
-        }
-    }
-
     // Load the products from the api and store them from json to c# dictionary
     public Dictionary<string,object>[] getProducts()
     {
@@ -38,21 +17,30 @@ public class DataSource
         Dictionary<string, object>[] productsData = {
 
             new Dictionary<string, object>{
-                {"id","ajlajk"},
-                {"name","Table Lamp"},
-                {"price","2500"},
-                {"description","An adjustable table lamp suitable for a study desk."},
-                {"image","Images/table_lamp"},
-                {"modelFile","dads"},
+                {"id","1"},
+                {"name","Sheen Chair"},
+                {"price","7500"},
+                {"description","Comfortable wooden Sheen Chair."},
+                {"image","Images/sheenchair"},
+                {"modelFile","https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/SheenChair/glTF-Binary/SheenChair.glb"},
             },
 
             new Dictionary<string, object>{
-                {"id","ajlajdsdk"},
-                {"name","Table Lamp 2"},
-                {"price","2500"},
+                {"id","2"},
+                {"name","Rubber Duck"},
+                {"price","500"},
+                {"description","Nice tiny yellow rubber duck."},
+                {"image","Images/rubberduck"},
+                {"modelFile","https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf"},
+            },
+
+             new Dictionary<string, object>{
+                {"id","3"},
+                {"name","Water Bottle"},
+                {"price","1500"},
                 {"description","An adjustable table lamp suitable for a study desk."},
-                {"image","Images/table_lamp"},
-                {"modelFile","asdsdsa"},
+                {"image","Images/waterbottle"},
+                {"modelFile","https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/WaterBottle/glTF-Binary/WaterBottle.glb"},
             }
 
         };
