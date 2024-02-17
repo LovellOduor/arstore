@@ -5,4 +5,9 @@ The app consists of three screens:
 
 ### 1.	Products Screen 
     Initial screen displaying a scrollable list of products.
-![Screenshot of the product list age.](/gitfiles/productsscreen.png)
+
+<p align="center">
+  <img src="/gitfiles/productsscreen.png" alt="Screen displaying a scrollable list of products."/>
+</p>
+
+![Screenshot of the product list age.]()
