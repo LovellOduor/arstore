@@ -61,15 +61,15 @@ Once downloaded: Open Unity and import the downloaded Unity Asset Package from t
 
 #### 2. gltFast package
 The glTFast package is required in order to load .gltf 3D models from the internet.\
-To add it, on the Unity menu click on **Window -> Package Manager -> Click on the plus sign + on th top left -> Add package by name** In the name input textfield enter **com.unity.cloud.gltfast** and click on **add** it will b installed in your project.
+To add it, on the Unity menu click on **Window -> Package Manager -> Click on the plus sign + on th top left -> Add package by name** In the name input textfield enter **com.unity.cloud.gltfast** and click on **add** it will be installed in your project.
 ##### Note if glTFast package is failing to install, try running unty as administrator.
 
 #### 3. TextMeshPro
 TextMeshPro is the ultimate text solution for Unity. It’s the perfect replacement for Unity’s UI Text and the legacy Text Mesh.\
-It can be installed simply from the Unity Packages.\ 
-on the Unity menu click on **Window -> Package Manager -> Click on the plus sign + on th top left -> Add package by name** In the name input textfield enter **com.unity.textmeshpro** and click on **add** it will b installed in your project.
+It can be installed simply from the Unity Packages.\
+On the Unity menu click on **Window -> Package Manager -> Click on the plus sign + on th top left -> Add package by name** In the name input textfield enter **com.unity.textmeshpro** and click on **add** it will be installed in your project.
 
-### ⚠️ Once you have installed all packages above, exit unity and open it p again for some changes to take effect.
+### ⚠️ Once you have installed all packages above, exit unity and open it up again for some changes to take effect.
 Now you can navigate to **Assets/Scenes/products** and run the project on the editor to test it.
 
 ## 3D Model Sources
@@ -82,22 +82,22 @@ The app utilizes the **Model View Controller (MVC)** design pattern.
 ### 1.Views
 The View is comprised of the User Interface, and UI components.\
 In Unity the 3 screens displayed Products, Product Details and AR View represent the View layer of our design.
-The following classes operate on the View layer:\
-1.) [Products.cs](/Assets/scripts/Products.cs) - This view displays product data on the products page and also listens to events comping from the products page.\
-2.) [ProductDetails.cs](/Assets/scripts/ProductDetails.cs) - This class displays the data for the selectd product from the products page on the product details page.\
-3.) [ModelLoader.cs](/Assets/scripts/ModelLoader.cs) - This class loads the 3D model for AR display on launch of the
+The following classes operate on the View layer:
+1. [Products.cs](/Assets/scripts/Products.cs) - This view displays product data on the products page and also listens to events comping from the products page.
+2. [ProductDetails.cs](/Assets/scripts/ProductDetails.cs) - This class displays the data for the selectd product from the products page on the product details page.
+3. [ModelLoader.cs](/Assets/scripts/ModelLoader.cs) - This class loads the 3D model for AR display on launch of the
 ARView page.
 
 ### 2. Model 
 The model layer is responsible for business logic and data classes.\
-In our application we have the following classes forming our model.\
-1.) [DataSource.cs](/Assets/scripts/DataSource.cs) - This class contains the business logic for fetching all the data about products such as images, name, id\
-2.) [Product.cs](/Assets/scripts/Product.cs) - This class makes up the structure of a Product. It contains all the data about a particular product such as modelFile, name, imageUrl.
+In our application we have the following classes forming our model.
+1. [DataSource.cs](/Assets/scripts/DataSource.cs) - This class contains the business logic for fetching all the data about products such as images, name, id
+2. [Product.cs](/Assets/scripts/Product.cs) - This class makes up the structure of a Product. It contains all the data about a particular product such as modelFile, name, imageUrl.
 ### 3. Controller
-The controller layer enables the View layer to Comunicate with the Model layer.\
+The controller layer enables the View layer to Comunicate with the Model layer.
 #### **Singleton Pattern**
-The [DataStore.cs](/Assets/scripts/DataStore.cs) - This class is the main controller in the project, it is instanciated only once throughout the lifetime of the applicaton and is accessible to all screens.\
-It performs two main functions.\
-1. It stores data about the currenty selected product from the products page and provides this data to the product details page.\
-2. It stores the list of all products loaded from the DataSource class and avails it to the products page.\
+The [DataStore.cs](/Assets/scripts/DataStore.cs) - This class is the main controller in the project, it is instanciated only once throughout the lifetime of the applicaton and is accessible to all screens.
+It performs two main functions.
+1. It stores data about the currenty selected product from the products page and provides this data to the product details page.
+2. It stores the list of all products loaded from the DataSource class and avails it to the products page.
 3. It avails the URL for the 3D model of the selected product to the ModelLoader.cs script.
