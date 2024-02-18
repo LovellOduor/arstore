@@ -17,11 +17,13 @@ Initial screen displaying a scrollable list of products.
 <p align="center">
   <img src="/gitfiles/productsscreen.png" alt="Screen displaying a scrollable list of products."/>
 </p>
+
 ### 2. Products Details Screen 
 A screen to display the details when a product is selected.
 <p align="center">
   <img src="/gitfiles/productdetailsscreen.png" alt="Screen to display the details when a product is selected."/>
 </p>
+
 ### 3. AR View Screen 
 A screen to display the Augmented model of the product.
 <p align="center">
@@ -83,8 +85,8 @@ The app utilizes the **Model View Controller (MVC)** design pattern.
 The View is comprised of the User Interface, and UI components.\
 In Unity the 3 screens displayed Products, Product Details and AR View represent the View layer of our design.
 The following classes operate on the View layer:
-1. [Products.cs](/Assets/scripts/Products.cs) - This view displays product data on the products page and also listens to events comping from the products page.
-2. [ProductDetails.cs](/Assets/scripts/ProductDetails.cs) - This class displays the data for the selectd product from the products page on the product details page.
+1. [Products.cs](/Assets/scripts/Products.cs) - This view displays product data on the products page and also listens to events coming from the products page.
+2. [ProductDetails.cs](/Assets/scripts/ProductDetails.cs) - This class displays the data for the selected product from the products page on the product details page.
 3. [ModelLoader.cs](/Assets/scripts/ModelLoader.cs) - This class loads the 3D model for AR display on launch of the
 ARView page.
 
